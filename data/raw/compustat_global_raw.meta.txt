@@ -1,5 +1,0 @@
-Source: WRDS Compustat Global (comp_global_daily.g_funda)
-Downloaded: 2026-05-11
-License: WRDS subscriber agreement
-Query: European SME candidates, fiscal years 2005–2020
-Rows: 249,663 | Firms: 47,677
