@@ -1,7 +1,7 @@
 # Research Question
 
-How does internationalization affect SME performance?
+Welche Auswirkungen hat das EU-Mercosur-Freihandelsabkommen auf kleine und mittlere Unternehmen im DACH-Raum?
 
 # Hypotheses
 
-- H1: Internationalized SMEs achieve higher revenue growth.
+- H1: Das EU-Mercosur-Freihandelsabkommen hat überwiegend positive Auswirkungen auf KMU im DACH-Raum, wobei die Effekte je nach Sektor und Unternehmensgröße variieren.
