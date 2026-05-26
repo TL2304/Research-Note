@@ -1,6 +1,6 @@
 # Research Question
 
-Welche Auswirkungen hat das EU-Mercosur-Freihandelsabkommen auf kleine und mittlere Unternehmen im DACH-Raum?
+Inwiefern hat das EU-Südkorea-Freihandelsabkommen (2011) den Umsatz kleiner und mittlerer Unternehmen in Deutschland und Österreich in den Sektoren Maschinen- und Anlagenbau sowie Chemie und Spezialwerkstoffe beeinflusst, und welche Schlussfolgerungen lassen sich daraus für das EU-Mercosur-Abkommen ableiten?
 
 # Hypotheses
 
