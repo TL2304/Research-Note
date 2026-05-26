@@ -1,10 +1,10 @@
 # Research Question
 
-Inwiefern hat das EU-Südkorea-Freihandelsabkommen (2011) den Umsatz kleiner und mittlerer Unternehmen in Deutschland und Österreich in den Sektoren Maschinen- und Anlagenbau sowie Chemie und Spezialwerkstoffe beeinflusst, und welche Schlussfolgerungen lassen sich daraus für das EU-Mercosur-Abkommen ableiten?
+Inwiefern beeinflusst das allgemeine Niveau der Handelsfreiheit, gemessen an der kumulativen Anzahl aktiver EU-Freihandelsabkommen, den Umsatz von KMU in Deutschland und Österreich, und welche Schlussfolgerungen lassen sich daraus für das EU-Mercosur-Abkommen ableiten?
 
 # Hypotheses
 
-- H1: Das EU-Mercosur-Freihandelsabkommen hat überwiegend positive Auswirkungen auf KMU im DACH-Raum, wobei die Effekte je nach Sektor und Unternehmensgröße variieren.
+- H1: Ein höheres Maß an Handelsfreiheit, gemessen an der kumulativen Anzahl aktiver EU-Freihandelsabkommen, wirkt sich positiv auf den Umsatz von KMU in Deutschland und Österreich aus.
 
 # Theoretical Background
 
