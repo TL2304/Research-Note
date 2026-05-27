@@ -1,10 +1,10 @@
 # Research Question
 
-Inwiefern beeinflusst das allgemeine Niveau der Handelsfreiheit, gemessen an der kumulativen Anzahl aktiver EU-Freihandelsabkommen, den Umsatz von KMU in Deutschland und Österreich, und welche Schlussfolgerungen lassen sich daraus für das EU-Mercosur-Abkommen ableiten?
+Inwiefern beeinflusst das allgemeine Niveau der Handelsoffenheit, gemessen am KOF Trade Globalisation Index, den Umsatz kleiner börsennotierter Unternehmen in Deutschland und Österreich, und welche Schlussfolgerungen lassen sich daraus für das EU-Mercosur-Abkommen ableiten?
 
 # Hypotheses
 
-- H1: Ein höheres Maß an Handelsfreiheit, gemessen an der kumulativen Anzahl aktiver EU-Freihandelsabkommen, wirkt sich positiv auf den Umsatz von KMU in Deutschland und Österreich aus.
+- H1: Ein höheres Niveau der Handelsoffenheit, gemessen am KOF Trade Globalisation Index, wirkt sich positiv auf den Umsatz kleiner börsennotierter Unternehmen in Deutschland und Österreich aus.
 
 # Theoretical Background
 
@@ -14,4 +14,4 @@ Inwiefern beeinflusst das allgemeine Niveau der Handelsfreiheit, gemessen an der
 | Timini & Viani (2020) | EU–Mercosur generates trade and welfare effects across sectors | Effects likely differ by industry and firm exposure |
 | Tröster & Raza (2021) | Benefits of the EU–Mercosur agreement are unevenly distributed | Some SMEs may face competitive pressure and adjustment costs |
 | Cernat et al. | SMEs are highly dependent on export opportunities and trade facilitation | Trade agreements may disproportionately affect SMEs |
-| Maton (2024) | EU–Mercosur has strategic rather than purely macroeconomic implications | Competitive positioning and market access may matter more than aggregate growth |
+| Maton (2024) | EU–Mercosur has strategic rather than purely macroeconomic implications | Competitive positioning and market access may matter more than aggregate growth |git status
