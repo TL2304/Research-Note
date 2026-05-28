@@ -1,7 +1,7 @@
 02_clean.py log
 ===============
-Run:              2026-05-28T16:54:53.504517
-Source folder:    data/raw/2026-05-28_16-40-58
+Run:              2026-05-28T17:01:28.292205
+Source folder:    data/raw/2026-05-28_17-00-52
 Files read:       25
 Currency filter:  EUR only
 Rows:             8,609
