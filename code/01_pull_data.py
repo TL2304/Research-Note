@@ -76,7 +76,7 @@ print(f"WRDS user:    {WRDS_USER}")
 
 # ── Configuration ─────────────────────────────────────────────────────────────
 START_YEAR = 2000
-END_YEAR   = 2024
+END_YEAR   = 2023
 
 # ── Output folder — new timestamp every run ────────────────────────────────────
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")

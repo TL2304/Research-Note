@@ -1,15 +1,15 @@
 02_clean.py log
 ===============
-Run:              2026-05-28T17:01:28.292205
-Source folder:    data/raw/2026-05-28_17-00-52
-Files read:       25
+Run:              2026-05-28T17:34:56.314230
+Source folder:    data/raw/2026-05-28_17-34-08
+Files read:       24
 Currency filter:  EUR only
-Rows:             8,609
+Rows:             8,416
 Columns:          447
-Firms (gvkey):    1049
-Years:            2000--2024 (if fyear in df.columns else 'N/A')
+Firms (gvkey):    1046
+Years:            2000--2023 (if fyear in df.columns else 'N/A')
 Countries:        2
-Output:           data/processed/panel_clean.parquet (4.2 MB)
+Output:           data/processed/panel_clean.parquet (4.1 MB)
 
 Note: Swiss firms (CHF) are excluded by the EUR filter.
       Remove curcd filter if Swiss firms are needed.
