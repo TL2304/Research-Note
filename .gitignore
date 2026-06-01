@@ -1,8 +1,34 @@
+# ── Python ───────────────────────────────────────────────────────────────────
 .venv/
-data/raw/
-.env
-references/*.pdf
 __pycache__/
 *.pyc
-*.log
-*.tex
+*.egg-info/
+
+# ── Credentials ──────────────────────────────────────────────────────────────
+.env
+
+# ── Data (never commit — regenerate with task pull / task clean) ─────────────
+data/raw/
+data/processed/
+
+# ── References (PDFs managed by Zotero) ──────────────────────────────────────
+references/*.pdf
+
+# ── Quarto build artifacts (regenerate with task render) ─────────────────────
+research_note.pdf
+research_note.html
+research_note.tex
+research_note.log
+_quarto/
+*_files/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+*.swp
