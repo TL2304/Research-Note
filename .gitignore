@@ -11,10 +11,13 @@ __pycache__/
 data/raw/
 data/processed/
 
+# ── Output (regenerate with task all) ────────────────────────────────────────
+output/
+
 # ── References (PDFs managed by Zotero) ──────────────────────────────────────
 references/*.pdf
 
-# ── Quarto build artifacts (regenerate with task render) ─────────────────────
+# ── Quarto build artifacts ────────────────────────────────────────────────────
 research_note.pdf
 research_note.html
 research_note.tex
