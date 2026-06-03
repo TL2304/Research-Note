@@ -273,13 +273,22 @@ for col in key_vars:
         print(f"    {col:<8}  {pct:>5.1f}%  {bar}")
 
 # -- Variablen konstruieren ---------------------------------------------------
-df = df.assign(
-    roa      = df["ib"] / df["at"],
-    leverage = (df["dltt"] + df["dlc"]) / df["seq"],
-    log_at   = df["at"].apply(lambda x: __import__('math').log(x) if x > 0 else None)
-)
-print("\nAbgeleitete Variablen konstruiert: roa, leverage, log_at")
+ib   = df["ib"].to_numpy(dtype=float, na_value=float("nan"))
+at   = df["at"].to_numpy(dtype=float, na_value=float("nan"))
+dltt = df["dltt"].to_numpy(dtype=float, na_value=float("nan"))
+dlc  = df["dlc"].to_numpy(dtype=float, na_value=float("nan"))
+seq  = df["seq"].to_numpy(dtype=float, na_value=float("nan"))
 
+import numpy as np
+roa      = ib / at
+leverage = (dltt + dlc) / seq
+roa[np.isinf(roa)]           = np.nan
+leverage[np.isinf(leverage)] = np.nan
+
+df["roa"]      = roa
+df["leverage"] = leverage
+df["log_at"]   = pd.Series([float(np.log(x)) if x > 0 else float("nan") for x in at])
+print("\nAbgeleitete Variablen konstruiert: roa, leverage, log_at")
 # -- Save ----------------------------------------------------------------------
 print(f"\nSaving to {OUT_PATH} ...")
 df.to_parquet(OUT_PATH, index=False)
