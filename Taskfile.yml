@@ -1,11 +1,8 @@
 version: '3'
-
-
 # Run the full pipeline:  task all
 # Run individual steps:   task pull / task clean / task descriptives / task regression
 # Render PDF:             task render
 # Lint & format:          task lint / task format
-
 tasks:
   pull:
     desc: "Download raw firm data from WRDS"
