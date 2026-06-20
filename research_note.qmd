@@ -130,6 +130,21 @@ The net effect on firm-level revenue is therefore an empirical question
 >
 > *Test: β(kof\_trade\_defacto) > 0 and statistically significant*
 
+The KOF Trade Globalisation Index (de facto) is particularly well-suited
+for this research design for three reasons. First, it captures actual
+trade flows rather than policy intentions, making it a more valid
+measure of the trade environment firms operate in
+[@gygliKOFGlobalisationIndex2019]. Second, its annual availability over
+2000–2023 enables a long panel that spans multiple trade cycles,
+including the 2008 financial crisis and the COVID-19 shock. Third,
+revenue (`sale`) is operationalised as the dependent variable rather
+than profitability, because trade openness is theoretically expected to
+affect market access and sales volumes first — profitability effects, if
+any, would accrue with a lag as cost structures adjust. This top-line
+focus aligns with @cernatSMESAREMORE, who show that SME export
+participation translates primarily into revenue expansion rather than
+immediate margin improvement.
+
 ## The Moderating Role of Firm Size
 
 @luInternationalizationPerformanceSMEs2001 demonstrate that the
@@ -174,23 +189,41 @@ firm-years from `{python} f"{n_firms:,}"` unique firms across
 ## Variables
 
 **Dependent variable.** Revenue (`sale`) in EUR millions — the most
-direct indicator of a firm's ability to convert market opportunities
-into realised sales [@luInternationalizationPerformanceSMEs2001].
+direct indicator of a firm's ability to convert trade opportunities into
+realised sales [@luInternationalizationPerformanceSMEs2001]. Revenue is
+preferred over profitability ratios such as RoA because it captures the
+top-line effect of market access more cleanly, without being confounded
+by firm-level cost structures or accounting choices.
 
 **Independent variable.** The KOF Trade Globalisation Index (de facto)
-for the firm's country of domicile [@gygliKOFGlobalisationIndex2019],
-capturing actual trade flows relative to GDP. The average KOF Trade
-Index in the sample is `{python} kof_mean`.
+for the firm's country of domicile [@gygliKOFGlobalisationIndex2019].
+The de facto sub-index is chosen over the de jure variant because it
+measures actual trade flows — imports and exports as a share of GDP —
+rather than legal frameworks or policy intentions. This makes it a more
+direct proxy for the trade environment actually faced by firms in a
+given year. The index is continuous and ranges from 0 to 100, with
+higher values indicating greater trade openness. The average KOF Trade
+Index in the sample is `{python} kof_mean`. Because the sample covers
+only two countries, the index takes one value per country per year,
+providing cross-country and time-series variation but no within-country
+cross-firm variation — a limitation discussed in Section 4.
 
 **Moderator.** Firm size as the natural logarithm of total assets
 (`log(at)`), following standard practice in SME research
-[@luInternationalizationPerformanceSMEs2001]. Firm size enters both as
-moderator and control.
+[@luInternationalizationPerformanceSMEs2001]. The log transformation is
+applied because total assets are strongly right-skewed across listed
+SMEs; the log scale compresses extreme values and yields a more
+symmetric distribution that better satisfies linear model assumptions.
+Firm size enters both as moderator (via the interaction term) and as a
+standalone control to isolate the moderation effect.
 
-**Control variables.** Return on assets (`ib / at`), leverage
-(`(dltt + dlc) / seq`), and capital expenditure intensity (`capx / at`).
-All continuous variables are winsorized at the 1st–99th percentiles
-[@wilcoxIntroductionRobustEstimation2012].
+**Control variables.** Return on assets (`ib / at`) controls for
+firm-level profitability, which may independently drive revenue growth.
+Leverage (`(dltt + dlc) / seq`) captures financial constraints that
+limit a firm's ability to expand internationally. Capital expenditure
+intensity (`capx / at`) proxies for investment activity and growth
+orientation. All continuous variables are winsorized at the 1st–99th
+percentiles to limit the influence of extreme observations.
 
 | Variable | Field(s) | Formula | Role |
 |----------|---------|---------|------|
@@ -250,8 +283,7 @@ integration of Germany and Austria. The RoA median of
 profitable, while the mean of `{python} roa_mean` is pulled below the
 median by loss-making firms.
 
-![KOF Trade Index versus revenue and median revenue by firm size.](output/figures/main_relationship.png){width=90%}
-
+![KOF Trade Index versus revenue (left) and median revenue by firm size for DEU and AUT (right). Note: Because the sample covers only two countries, the KOF Trade Index takes one value per country per year — one for Germany and one for Austria. Observations therefore cluster around two distinct values per year, which produces the vertical stacking visible in the left panel. This is a structural feature of a two-country design, not a data error or categorisation.](output/figures/main_relationship.png){width=90%}
 ![Pairwise correlation matrix for research variables.](output/figures/correlation_matrix.png){width=70%}
 
 ## Regression Results
